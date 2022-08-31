@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Reset CSS*/
+        html, body{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+            width: 100%;
+            height: 100%;
+            background-color:black;
+        }
+        .container{
+            display: grid; /*Aqui inicia a configuração do grid*/
+            grid-template: 20vh 70vh 10vh/3fr 1fr;
+            grid-template-areas: 
+                                "h h"
+                                "m a"
+                                "f f";
+            gap: 1vh;
+            /*grid-template-columns: 3fr 1fr;
+            grid-template-rows: 20vh 50vh 10vh;
+            row-gap: 1vh;
+            column-gap: 1vh;*/
+        }
+
+        header{
+            background-color: yellow;
+            grid-area: h;
+            /*grid-column: 1/3; */
+            /*grid-column-start:1 ;
+            grid-column-end:3 ;*/
+            /*height: 100px;*/
+        }
+
+        main{
+            background-color: blue;
+            grid-area: m;
+            /*grid-column: 1/2;*/
+            /*grid-column-start: 1;
+            grid-column-end: 2;*/
+             /*height: 100px;*/
+        }
+
+        aside{
+            background-color: green;
+            grid-area: a;
+            /*grid-column: 2/3;*/
+            /*grid-column-start: 2;
+            grid-column-end: 3;*/
+             /*height: 100px;*/
+        }
+
+        footer{
+            background-color: red;
+            grid-area: f;
+            /*grid-column: 1/3;*/
+            /*grid-column-start: 1;
+            grid-column-end: 3;*/
+             /*height: 100px;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Header</h2>
+        </header>
+        <main>
+            <h2>Main</h2>
+        </main>
+        <aside>
+            <h2>Aside</h2>
+        </aside>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </div>
+</body>
+</html>
