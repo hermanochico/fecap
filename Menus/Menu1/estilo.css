@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #bed2d0;
+}
+
+li, a, button{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: rgb(30, 103, 74);
+    text-decoration: none;
+}
+
+.logo{
+    width: 10%;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav_link{
+    list-style: none;
+}
+
+.nav_link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a{
+    transition: all 0.3s ease  0s;
+}
+
+.nav_link li a:hover{
+    color: rgb(111, 148, 135);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(6, 44, 31);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease  0s;
+    color: rgb(255, 255, 255);
+}
+
+button:hover{
+    background-color: rgb(6, 73, 50);
+    color: rgb(255, 255, 255);
+}
